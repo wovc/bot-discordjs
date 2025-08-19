@@ -1,5 +1,5 @@
 {
-  "name": "bot-tks",
+  "name": "bot-discordjs",
   "author": "João",
   "type": "module",
   "main": "main.js",
