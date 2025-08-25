@@ -5,3 +5,6 @@ export * from "../Functions/PanelLogs/PEntrada.js";
 export * from "../Functions/PanelLogs/PInvite.js";
 export * from "../Functions/PanelLogs/PSaida.js";
 export * from "../Functions/PanelLogs/PCheck.js";
+export * from "../Functions/Configs/PModer.js";
+export * from "../Functions/Configs/PSystemTicket.js";
+export * from "../Functions/Global/PTicket.js";

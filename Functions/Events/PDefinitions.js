@@ -18,6 +18,12 @@ export async function PDefinitions({ interaction }) {
     const MainAction = new ActionRowBuilder()
         .addComponents(
             new ButtonBuilder()
+                .setCustomId("Button.Config.Ticket")
+                .setLabel("System Ticket")
+                .setEmoji("<:emojiChannels:1406040225137823744>")
+                .setStyle(2),
+
+            new ButtonBuilder()
                 .setCustomId("Button.Config.Channels")
                 .setLabel("Config Channels")
                 .setEmoji("<:emojiChannels:1406040225137823744>")

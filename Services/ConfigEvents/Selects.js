@@ -1,4 +1,4 @@
-import { PConfigsChannels } from "#functions";
+import { PConfigsChannels, PTicket } from "#functions";
 import { db } from "../../Database/index.js";
 
 export default {
@@ -48,6 +48,23 @@ export default {
                 } catch (err) {
                     console.error(err);
                 }
+            }
+        }
+        if (interaction.isStringSelectMenu() && interaction.customId == "SelectMenu.PTicket") {
+            const customId = interaction.values[0];
+            const joao = await PTicket({ interaction });
+
+            if (customId == "SelectMenu.String.PTicket.Support") {
+                await interaction.update({ embeds: joao.embeds, components: joao.components })
+                interaction.followUp({ flags: ["Ephemeral"], content: "\`🛠️\` Ainda em desenvolvimento" });
+            }
+            if (customId == "SelectMenu.String.PTicket.Dúvida") {
+                await interaction.update({ embeds: joao.embeds, components: joao.components })
+                interaction.followUp({ flags: ["Ephemeral"], content: "\`🛠️\` Ainda em desenvolvimento" });
+            }
+            if (customId == "SelectMenu.String.PTicket.Denúncia") {
+                await interaction.update({ embeds: joao.embeds, components: joao.components })
+                interaction.followUp({ flags: ["Ephemeral"], content: "\`🛠️\` Ainda em desenvolvimento" });
             }
         }
     }
