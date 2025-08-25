@@ -21,7 +21,7 @@ Este projeto é um bot para Discord feito com [discord.js](https://discord.js.or
 
 1. **Clone o repositório:**
    ```sh
-   git clone https://github.com/seu-usuario/seu-repo.git
+   git clone https://github.com/wovc/bot-discordjs.git
    cd seu-repo
    ```
 
@@ -52,4 +52,5 @@ Ideal para servidores que precisam de automação, suporte e logs detalhados.
 - Desenvolvido com 💙 por João.
 
 # 📬 Contribua!
+
 - Achou um bug ou quer sugerir uma melhoria? Abra uma issue ou envie um pull request!
