@@ -7,7 +7,7 @@ export default {
     type: ApplicationCommandType.ChatInput,
     async run(client, interaction) {
         if (!interaction.member.permissions.has("Administrator")) {
-            return interaction.reply({ flags: ["Ephemeral"], content: "Apenas adminitradores podem usar esse comando" });
+            return interaction.reply({ flags: ["Ephemeral"], content: "Apenas administradores podem usar esse comando" });
         }
         const joao = await PHome({ interaction });
         interaction.reply({ flags: ["Ephemeral"], embeds: joao.embeds, components: joao.components });
